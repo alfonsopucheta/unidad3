@@ -1,0 +1,33 @@
+.contenedor{
+    background-color: blueviolet;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(3,100px);
+    gap:10px ;
+    padding: 10px;
+}
+
+.elemento{
+    background-color: purple;
+    border-radius: 6px;
+    box-shadow: 4px 4px 4px black,
+    inset 3px 3px 2px white;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.e1,.e5{
+    grid-column: 1 /span 3;
+}
+
+@media all and(max-width:00px){
+    .e2,.e3,.e4 {
+        grid-column: 1/span 3;
+    }
+    .contenedor{
+        grid-template-columns: repeat(5,100px);
+    }
+
+}

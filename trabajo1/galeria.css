@@ -1,0 +1,53 @@
+*{
+    background-color: black;
+}
+h1{
+    color:white;
+    text-align: center;
+}
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
+.e1{
+    grid-area: e1;
+}
+.e2{
+    grid-area: e2;
+}
+.e3{
+    grid-area: e3;
+}
+.e4{
+    grid-area: e4;
+}
+.e5{
+    grid-area: e5;
+}
+.e6{
+    grid-area: e6;
+}
+.e7{
+    grid-area: e7;
+}
+.e8{
+    grid-area: e8;
+}
+.e9{
+    grid-area: e9;
+}
+.e10{
+    grid-area: e10;
+}
+.contenedor{
+    display: grid;
+    gap: 1px;
+    grid-template:
+                    'e1 e1 e2' 20ch
+                    'e1 e1 e3' 10ch
+                    'e4 e5 e7' 30ch
+                    'e4 e6 e9' 30ch
+                    'e8 e8 e9'30ch
+                    'e8 e8 e10'30ch;
+}

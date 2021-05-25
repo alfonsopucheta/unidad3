@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial';
+}
+
+:root{
+    --br:5px;
+}
+
+body{
+    background-image: url(/landscape-4765322_1920.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header{
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 50px;
+    border: 1px solid  rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(15px);
+    margin: var(--br);
+}
+
+ul{
+    list-style: none;
+    margin: 10px;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    display: block;
+}
+
+nav a:hover{
+    cursor: pointer;
+    color: white;
+    border-radius: var(--br);
+    background-color: rgb(66, 64, 88);
+}
+
+nav ul ul{
+    position: absolute;
+    top: -1px;
+    display: none;
+}
+
+nav > ul{
+    display: flex;
+    position: relative;
+}
+
+.n1{
+    line-height: 1.3em;
+}
+
+.n1 ul{
+    position: absolute;
+}
+
+.n1:hover ul{
+    cursor: pointer;
+    display: block;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(15px);
+    height: 95px;
+    border-left: 1px solid  rgba(255, 255, 255, 0.7);
+    border-right: 1px solid  rgba(255, 255, 255, 0.7);
+    border-bottom: 1px solid  rgba(255, 255, 255, 0.7);
+}
